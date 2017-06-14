@@ -17,3 +17,5 @@ after all those commands just paste any test into ghci (i.e. prop_sorting_keeps_
 to run test
 ---
 $ quikCheck testname
+
+(the last test - the one that is commented out - works in ghci)
