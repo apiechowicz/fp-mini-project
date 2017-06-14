@@ -1,0 +1,224 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-14 18:23:06.6068 UTC
+
+interface fp-mini-project-0.1.0.0-24ePvkhSACE8e212Zenbpk:Lib 8002
+  interface hash: b669a4a56eb4efa88686b0c7fb215329
+  ABI hash: d112a882556c1ff377f1801c6a564ba2
+  export-list hash: 1cc229111e5fc2c2fb46064b949e2bd0
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.countNodes
+  Lib.createNode
+  Lib.insertNode
+  Lib.mapTree
+  Lib.merge
+  Lib.mergeSort
+  Lib.searchNode
+  Lib.treeDepth
+  Lib.treeFromList
+  Lib.BinTree
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+4421b8bca44f3629e980b1b195966dfc
+  $fShowBinTree :: GHC.Show.Show a => GHC.Show.Show (Lib.BinTree a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (Lib.BinTree a)
+                  (Lib.$fShowBinTree_$cshowsPrec @ a $dShow)
+                  (Lib.$fShowBinTree_$cshow @ a $dShow)
+                  (Lib.$fShowBinTree_$cshowList @ a $dShow) -}
+e6b07c9350fdaa69ff09ec0889d92391
+  $fShowBinTree1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+4421b8bca44f3629e980b1b195966dfc
+  $fShowBinTree_$cshow ::
+    GHC.Show.Show a => Lib.BinTree a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: Lib.BinTree a) ->
+                 Lib.$fShowBinTree_$cshowsPrec
+                   @ a
+                   $dShow
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4421b8bca44f3629e980b1b195966dfc
+  $fShowBinTree_$cshowList ::
+    GHC.Show.Show a => [Lib.BinTree a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [Lib.BinTree a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Lib.BinTree a)
+                   (Lib.$fShowBinTree_$cshowsPrec @ a $dShow Lib.$fShowBinTree1)
+                   eta
+                   eta1) -}
+4421b8bca44f3629e980b1b195966dfc
+  $fShowBinTree_$cshowsPrec ::
+    GHC.Show.Show a => GHC.Types.Int -> Lib.BinTree a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><L,1*U(U)><S,1*U> -}
+135f61cd897d9a5bdc68da4a629cef05
+  $tc'EmptyTree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14301382847860027846##
+                   12664752560856304797##
+                   Lib.$trModule
+                   Lib.$tc'EmptyTree1) -}
+9323ce4b8a8c0219a7d0a36723d2e251
+  $tc'EmptyTree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'EmptyTree"#) -}
+1a3ce321c603c9d66168292e6c732f4d
+  $tc'Node :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17737065397228239881##
+                   800686584393339064##
+                   Lib.$trModule
+                   Lib.$tc'Node1) -}
+31e58ec2ba9e63ccf8999bad784612cf
+  $tc'Node1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Node"#) -}
+8a447405ed76c1a92724a05969810c3e
+  $tcBinTree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8762577230912637213##
+                   18054789489704550269##
+                   Lib.$trModule
+                   Lib.$tcBinTree1) -}
+27dbb96fcf247bf8215954f283ff5f9c
+  $tcBinTree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "BinTree"#) -}
+46a3fdedd83a7200c798d87213400e2c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+680c5e11c6ddc3074f6044d8cd637c1e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+388b7ad4f6ebb86767a4e2a03b2e5dc2
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "fp-mini-project-0.1.0.0-24ePvkhSACE8e212Zenbpk"#) -}
+57e99cb02231ef80ae5cceec1ffbc042
+  $wcountNodes :: Lib.BinTree a -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+5625c00b33b0b6268349f36a74617c0c
+  $winsertNode ::
+    GHC.Classes.Ord a =>
+    a -> Lib.BinTree a -> (# a, Lib.BinTree a, Lib.BinTree a #)
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U>,
+     Inline: [0] -}
+4a7cb99776e6a93550d9fde0e6a62056
+  $wtreeDepth :: Lib.BinTree a -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+4421b8bca44f3629e980b1b195966dfc
+  data BinTree a = EmptyTree | Node a (Lib.BinTree a) (Lib.BinTree a)
+57f5d9104f19f9c1df5f2c7b71891e33
+  countNodes :: Lib.BinTree a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.BinTree a) ->
+                 case Lib.$wcountNodes @ a w of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+3e73a07cfe8d71c0660b83537f914275
+  createNode :: a -> Lib.BinTree a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (a1 :: a) ->
+                 Lib.Node @ a a1 (Lib.EmptyTree @ a) (Lib.EmptyTree @ a)) -}
+4cfabf155e6759c6b575530fe97d94b8
+  insertNode ::
+    GHC.Classes.Ord a => a -> Lib.BinTree a -> Lib.BinTree a
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: a) (w2 :: Lib.BinTree a) ->
+                 case Lib.$winsertNode @ a w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Lib.Node @ a ww1 ww2 ww3 }) -}
+20d219ca224286f83aa52d4d462ab6f0
+  mapTree :: (a -> a) -> Lib.BinTree a -> Lib.BinTree a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+41196a9610d02316b70bd1abdced80a6
+  merge :: GHC.Classes.Ord a => [a] -> [a] -> [a]
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,C(C1(U)),C(C1(U)),A,A,A)><S,1*U><S,1*U> -}
+5d9e3a18d0be03edab05fa18efe53864
+  mergeSort :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2,
+     Strictness: <L,U(A,A,A,C(C1(U)),C(C1(U)),A,A,A)><S,1*U> -}
+0e043fe1d7f76d1a9539760cad717955
+  searchNode ::
+    GHC.Classes.Ord a => a -> Lib.BinTree a -> GHC.Types.Bool
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><L,U><S,1*U> -}
+4f2f61d6ef91218edb7dd25de94b86c8
+  treeDepth :: Lib.BinTree a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.BinTree a) ->
+                 case Lib.$wtreeDepth @ a w of ww { DEFAULT -> GHC.Types.I# ww }) -}
+fcc8b72cd96acc0232be7a3ce5c8b73c
+  treeFromList :: GHC.Classes.Ord a => [a] -> Lib.BinTree a
+  {- Arity: 2,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (ds :: [a]) ->
+                 case ds of wild {
+                   [] -> Lib.EmptyTree @ a
+                   : ipv ipv1
+                   -> letrec {
+                        go :: [a] -> Lib.BinTree a {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (ds1 :: [a]) ->
+                          case ds1 of wild1 {
+                            [] -> Lib.EmptyTree @ a
+                            : y ys
+                            -> case Lib.$winsertNode
+                                      @ a
+                                      $dOrd
+                                      y
+                                      (go ys) of ww { (#,,#) ww1 ww2 ww3 ->
+                               Lib.Node @ a ww1 ww2 ww3 } }
+                      } in
+                      go wild }) -}
+instance [safe] GHC.Show.Show [Lib.BinTree] = Lib.$fShowBinTree
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
